@@ -24,10 +24,52 @@
             font-optical-sizing: auto;
         }
     </style>
+    <!-- tailwind scripts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'pet-primary':'#FFDC26',
+                        'pet-secodary':'#FFF9F4'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- fontawsome kit -->
+    <script src="https://kit.fontawesome.com/aa3a5bcb91.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body class="sora-font">
+    <header class="bg-pet-secodary">
+        <!-- navbar -->
+        <nav class="flex items-center justify-between p-4 max-w-[1320px] mx-auto">
+            <div class="flex items-center">
+                <img src="assets/logo-header.png" alt="">
+                <h1 class="font-semibold text-lg">Browser<span class="text-pet-primary">4</span>Pets</h1>
+            </div>
+            <div class="hidden md:flex">
+                <ul class="flex gap-5 items-center">
+                    <li><a href="">Find a Pet</a></li>
+                    <li><a href="">Breeds</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="hidden md:flex gap-2 items-center">
+                <i class="fa-solid fa-bell "></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="border border-pet-primary px-3 py-1 rounded-md hover:bg-pet-primary">Login</button>
+                <button class="bg-pet-primary rounded-md border-none px-3 py-1 hover:bg-white">Register</button>
+            </div>
+            <!-- hambarger menu -->
+            <div class="flex md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
     <main>
 
     </main>
